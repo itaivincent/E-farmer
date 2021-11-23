@@ -16,17 +16,30 @@ export class LoginComponent implements OnInit {
 
     this.login = this.fb.group({
         email:['',Validators.compose([Validators.required,Validators.email])],
-        password:['',Validators.required]
+        password:['',Validators.required],
+        token : 'rhquihrpoiqhaoid',
 
     })
 
   }
 
+
   loginSubmit(data:any){
-    // this.api.login(data).subscribe((data:any)=>{  
-    // })
-    localStorage.setItem("isLoggedin","true");
-    this.router.navigate(['dashboard']);
+    console.log(data);
+    let dataToPass = {
+      email:data.email,
+      password:data.password,
+      token:"riewquoafhofnasdjlf"
+     
+    }
+
+    this.api.login(dataToPass).subscribe((data:any)=>{
+      if(data.auth_token != null){
+      localStorage.setItem('token', data.auth_token)
+      this.router.navigate(['home'])
+    }
+    
+    })
   }
 
   gotosignup(){

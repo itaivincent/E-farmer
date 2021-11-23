@@ -7,9 +7,10 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { ContentComponent } from './Components/content/content.component';
 import { LandingComponent } from './Components/landing/landing.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './Components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpinterceptorService } from './httpinterceptor.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS,
+  useClass: HttpinterceptorService,
+   multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

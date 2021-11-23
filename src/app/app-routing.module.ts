@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path:'home',component:ContentComponent,
-    canActivate:[AuthGuard]
+    // canActivate:[AuthGuard]
   }
 ];
 
