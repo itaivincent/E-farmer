@@ -12,6 +12,6 @@ export class AppComponent {
   constructor(private titleService: Title , private meta: Meta){
    titleService.setTitle('E-Farmer');
 
-   meta.addTag({name:'viewport', content:'width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui'}, true)
+   meta.addTag({name:'viewport', content:'width=device-width, initial-scale=1.0'}, true)
   }
 }

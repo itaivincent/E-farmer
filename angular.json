@@ -27,57 +27,38 @@
               "src/assets"
             ],
             "styles": [
-              "src/css/style.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/css/bootstrap.min.css",
-              "src/css/waves.min.css",
-              "src/css/feather.css",
-              "src/css/font-awesome-n.min.css",
-              "src/css/chartist.css",
-             
-              "src/css/widget.css",
-              "src/css/themify-icons.css"
-              
-               
+   
 
+              "src/styles.css",
+              "node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css",
+              "node_modules/admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css",
+              "node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css",
+              "node_modules/admin-lte/plugins/jqvmap/jqvmap.min.css",
+              "node_modules/admin-lte/dist/css/adminlte.min.css",
+              "node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css",
+              "node_modules/admin-lte/plugins/daterangepicker/daterangepicker.css",
+              "node_modules/admin-lte/plugins/summernote/summernote-bs4.min.css"
+             
+                          
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
 
-              "src/js/jquery.min.js",
-              "src/js/jquery-ui.min.js",
-              "src/js/popper.min.js",
-              "src/js/bootstrap.min.js",
-              "src/js/waves.min.js",
-              "src/js/jquery.slimscroll.js",
-              "src/js/jquery.flot.js",
-              "src/js/jquery.flot.categories.js",
-              "src/js/curvedlines.js",
-              "src/js/jquery.flot.tooltip.min.js",
-              "src/js/amcharts.js",
-              "src/js/serial.js",
-              "src/js/light.js",
-              "src/js/markerclusterer.js",
-              "src/js/gmaps.js",
-              "src/js/pcoded.min.js",
-              "src/js/vertical-layout.min.js",
-              "src/js/crm-dashboard.min.js",
-              "src/js/script.min.js",
-              "src/js/rocket-loader.min.js",
-
-              "src/js/i18next.min.js",
-              "src/js/i18nextxhrbackend.min.js",
-              "src/js/i18nextbrowserlanguagedetector.min.js",
-              "src/js/jquery-i18next.min.js",
-              "src/js/common-pages.js"
-          
-
-              
-              
-              
-              
-              
+              "node_modules/admin-lte/plugins/jquery/jquery.min.js",
+              "node_modules/admin-lte/plugins/jquery-ui/jquery-ui.min.js",
+              "node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js",
+              "node_modules/admin-lte/plugins/chart.js/Chart.min.js",
+              "node_modules/admin-lte/plugins/sparklines/sparkline.js",
+              "node_modules/admin-lte/plugins/jqvmap/jquery.vmap.min.js",
+              "node_modules/admin-lte/plugins/jqvmap/maps/jquery.vmap.usa.js",
+              "node_modules/admin-lte/plugins/jquery-knob/jquery.knob.min.js",
+              "node_modules/admin-lte/plugins/moment/moment.min.js",
+              "node_modules/admin-lte/plugins/daterangepicker/daterangepicker.js",
+              "node_modules/admin-lte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js",
+              "node_modules/admin-lte/plugins/summernote/summernote-bs4.min.js",
+              "node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
+              "node_modules/admin-lte/dist/js/adminlte.js",
+              "node_modules/admin-lte/dist/js/demo.js",
+              "node_modules/admin-lte/dist/js/pages/dashboard.js"
             ]
           },
           "configurations": {
@@ -85,8 +66,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
