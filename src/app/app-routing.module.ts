@@ -4,6 +4,8 @@ import { AuthGuard } from './auth.guard';
 import { ContentComponent } from './Components/content/content.component';
 import { LandingComponent } from './Components/landing/landing.component';
 import { LoginComponent   } from './Components/login/login.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
+import { RegistrationComponent } from './Components/registration/registration.component';
 
 const routes: Routes = [
   {
@@ -20,7 +22,13 @@ const routes: Routes = [
   {
     path:'home',component:ContentComponent,
     // canActivate:[AuthGuard]
-  }
+  },
+  {
+    path:'registration',component:RegistrationComponent,
+  },
+  {
+    path:'#',component:ContentComponent,
+  },
 ];
 
 @NgModule({

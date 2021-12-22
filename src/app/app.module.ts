@@ -11,6 +11,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './Components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpinterceptorService } from './httpinterceptor.service';
+import { RegistrationComponent } from './Components/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpinterceptorService } from './httpinterceptor.service';
     SidebarComponent,
     ContentComponent,
     LandingComponent,
-    LoginComponent, 
+    LoginComponent,
+    RegistrationComponent, 
  
   ],
   imports: [
