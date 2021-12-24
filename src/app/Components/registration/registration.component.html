@@ -36,7 +36,7 @@
       <section class="content">
         <div class="card">
             <div class="card-header">
-              <h3 class="card-title">DataTable with default features</h3>
+              <h3 class="card-title">Growers List</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -46,26 +46,21 @@
                   <th>Grower Name</th>
                   <th>Surname</th>
                   <th>Phone Number</th>
-                  <th>ID Number</th>
-                  <th>Village</th>
+                  <th>Town</th>
+                  <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
+                              
+                <tr *ngFor="let grower of growers">
+                  <td>{{ grower.PRO_SURNAME }}</td>
+                  <td>{{grower.PRO_FORENAMES}}</td>
+                  <td>{{ grower.PRO_PRODUCER_NO }}</td>             
+                  <td>{{grower.PRO_TOWN}}</td>
+                  <td class="text-center">
+                    <a href="" data-toggle="tooltip" data-placement="top" title="View details" rel="tooltip" class="btn btn-info"><i class="nav-icon far fa-eye">View</i></a>&nbsp;&nbsp;   
+                    <a href="" data-toggle="tooltip" data-placement="top" title="edit details" rel="tooltip" class="btn btn-success"><i class="nav-icon fas fa-user-edit">Edit</i></a>
                   </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                </tr>                   
-                <tr>
-                  <td>Other browsers</td>
-                  <td>All others</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>U</td>
                 </tr>
                 </tbody>
                 <tfoot>
@@ -73,8 +68,8 @@
                         <th>Grower Name</th>
                         <th>Surname</th>
                         <th>Phone Number</th>
-                        <th>ID Number</th>
-                        <th>Village</th>
+                        <th>Town</th>
+                        <th>Action</th>
                       </tr>
                 </tfoot>
               </table>

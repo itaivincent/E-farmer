@@ -34,6 +34,14 @@ export class EndpointsService {
       })}); // returns an observable  
    }
 
+   get_growers(){
+    let growers = 'http://smartfarmer.dbs.solutions:8000/api/growers'; 
+    return this.httpClient.get(growers,{
+      headers: new HttpHeaders({
+        'Content-Type':'application/json',
+      })}); // returns an observable  
+   }
+
 
    getToken(){
      return localStorage.getItem('token')
