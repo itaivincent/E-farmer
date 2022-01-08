@@ -42,6 +42,14 @@ export class EndpointsService {
       })}); // returns an observable  
    }
 
+   createGrower(growerPersonalDetails:any){
+    let endpoint = 'http://smartfarmer.dbs.solutions:8000/api/grower/add'; 
+    return this.httpClient.post(endpoint,growerPersonalDetails,{
+      headers: new HttpHeaders({
+        'Content-Type':'application/json',
+      })}); // returns an observable  
+   }
+
 
    getToken(){
      return localStorage.getItem('token')

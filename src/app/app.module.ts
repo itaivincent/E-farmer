@@ -12,6 +12,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpinterceptorService } from './httpinterceptor.service';
 import { RegistrationComponent } from './Components/registration/registration.component';
+import { ContractComponent } from './Components/contract/contract.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RegistrationComponent } from './Components/registration/registration.co
     ContentComponent,
     LandingComponent,
     LoginComponent,
-    RegistrationComponent, 
+    RegistrationComponent,
+    ContractComponent, 
  
   ],
   imports: [
