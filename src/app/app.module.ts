@@ -13,6 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpinterceptorService } from './httpinterceptor.service';
 import { RegistrationComponent } from './Components/registration/registration.component';
 import { ContractComponent } from './Components/contract/contract.component';
+import { AssigncontractComponent } from './Components/assigncontract/assigncontract.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ContractComponent } from './Components/contract/contract.component';
     LandingComponent,
     LoginComponent,
     RegistrationComponent,
-    ContractComponent, 
+    ContractComponent,
+    AssigncontractComponent, 
  
   ],
   imports: [
@@ -31,7 +34,8 @@ import { ContractComponent } from './Components/contract/contract.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [{provide: HTTP_INTERCEPTORS,
   useClass: HttpinterceptorService,
